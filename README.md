@@ -28,7 +28,7 @@ The goal of this project is to:
 ---
 
 ## 📁 Folder Structure
-digit-recognition-project/
+ digit-recognition-project/
 │
 ├── digit_recognition.ipynb          # Main Jupyter Notebook
 ├── digit_model.h5                   # Trained model (auto-saved after training)
