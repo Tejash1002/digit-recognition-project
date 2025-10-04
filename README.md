@@ -39,6 +39,7 @@ digit-recognition-project/
 
 ### 1️⃣ Clone this Repository
 git clone https://github.com/Tejash1002/digit-recognition-project.git
+
 cd digit-recognition-project
 
 2️⃣ Create and Activate Environment
