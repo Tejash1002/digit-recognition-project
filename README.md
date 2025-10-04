@@ -8,6 +8,7 @@ Built with **TensorFlow/Keras**, it learns from the **MNIST dataset** and can pr
 ## 📘 Project Overview
 
 The goal of this project is to:
+
 - Train a CNN to recognize handwritten digits.
 - Test the model’s accuracy on unseen data.
 - Use your own digit images for prediction
@@ -23,7 +24,7 @@ The goal of this project is to:
 - **Matplotlib** — for plotting results  
 - **Scikit-learn** — for evaluation metrics  
 - **Jupyter Notebook** — for interactive coding and visualization
-- 
+
 ---
 
 ## 📁 Folder Structure
@@ -43,17 +44,23 @@ git clone https://github.com/Tejash1002/digit-recognition-project.git
 cd digit-recognition-project
 
 2️⃣ Create and Activate Environment
+
 -Using Anaconda
+
 conda create -n digit-env python=3.9 -y
+
 conda activate digit-env
 
 3️⃣ Install Required Packages
+
 pip install tensorflow opencv-python numpy matplotlib scikit-learn jupyter
+
 pip install -r requirements.txt
 
 4️⃣ Run the Notebook
 
 ##1️⃣ Start Jupyter Notebook
+
 jupyter notebook
 
 2️⃣ Open and Run the Notebook
