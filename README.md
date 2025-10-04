@@ -1,6 +1,6 @@
-# ✨ Handwritten Digit Recognition using CNN
+ # ✨ Handwritten Digit Recognition using CNN
 
-This project uses a **Convolutional Neural Network (CNN)** to recognize handwritten digits (0–9).  
+This project uses a **Convolutional Neural Network (CNN)** to recognize handwritten digits (0–9).
 Built with **TensorFlow/Keras**, it learns from the **MNIST dataset** and can predict digits from your own handwritten images.
 
 ---
@@ -9,121 +9,122 @@ Built with **TensorFlow/Keras**, it learns from the **MNIST dataset** and can pr
 
 The goal of this project is to:
 
-- Train a CNN to recognize handwritten digits.
-- Test the model’s accuracy on unseen data.
-- Use your own digit images for prediction
+* Train a CNN to recognize handwritten digits.
+* Test the model’s accuracy on unseen data.
+* Use your own digit images for prediction.
 
 ---
 
 ## 🧠 Tech Stack
 
--  **Python 3.9+**
-- **TensorFlow / Keras** — for building and training the CNN  
-- **OpenCV** — for image processing  
-- **NumPy** — for data handling  
-- **Matplotlib** — for plotting results  
-- **Scikit-learn** — for evaluation metrics  
-- **Jupyter Notebook** — for interactive coding and visualization
+* **Python 3.9+**
+* **TensorFlow / Keras** — For building and training the CNN
+* **OpenCV** — For image processing
+* **NumPy** — For data handling
+* **Matplotlib** — For plotting results
+* **Scikit-learn** — For evaluation metrics
+* **Jupyter Notebook** — For interactive coding and visualization
 
 ---
 
 ## 📁 Folder Structure
- digit-recognition-project/
-│
-├── digit_recognition.ipynb          # Main Jupyter Notebook
-├── digit_model.h5                   # Trained model (auto-saved after training)
-├── requirements.txt                 # All required dependencies
-├── custom_digits/                   # (Optional) Folder for your own digit images
-└── README.md                        # Project documentation
 
-## ⚙️ Setup Instructions
+```
+digit-recognition-project/
+│
+├── digit_recognition.ipynb      # Main Jupyter Notebook
+├── digit_model.h5               # Trained model (auto-saved after training)
+├── requirements.txt             # All required dependencies
+├── custom_digits/               # (Optional) Folder for your own digit images
+└── README.md                    # Project documentation
+```
+
+---
+
+## ⚙️ Setup and Instructions
 
 ### 1️⃣ Clone this Repository
-git clone https://github.com/Tejash1002/digit-recognition-project.git
 
+```bash
+git clone [https://github.com/Tejash1002/digit-recognition-project.git](https://github.com/Tejash1002/digit-recognition-project.git)
 cd digit-recognition-project
+```
 
-2️⃣ Create and Activate Environment
+### 2️⃣ Create and Activate a Virtual Environment
 
--Using Anaconda
+*Using Anaconda:*
 
+```bash
 conda create -n digit-env python=3.9 -y
-
 conda activate digit-env
+```
 
-3️⃣ Install Required Packages
+### 3️⃣ Install Required Packages
 
-pip install tensorflow opencv-python numpy matplotlib scikit-learn jupyter
+The recommended way is to use the `requirements.txt` file.
 
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Run the Notebook
+*Alternatively, you can install the main packages manually:*
+```bash
+pip install tensorflow opencv-python numpy matplotlib scikit-learn jupyter
+```
 
-##1️⃣ Start Jupyter Notebook
+### 4️⃣ Run the Notebook
 
+**Start the Jupyter Notebook server:**
+
+```bash
 jupyter notebook
+```
 
-2️⃣ Open and Run the Notebook
+**Open and run `digit_recognition.ipynb`:**
+Once the server is running, open the notebook file in your browser and run all the cells one by one.
 
-Open digit_recognition.ipynb and run all the cells one by one.
+The notebook will perform the following steps:
+* Load and preprocess the MNIST data.
+* Build and train the CNN model.
+* Plot the accuracy and loss curves.
+* Evaluate the model's performance.
+* Save the trained model as `digit_model.h5`.
+* Provide a section to test the model on your own custom image.
 
-The notebook will:
+---
 
--Load and preprocess MNIST data
+## 🧠 Predict Your Own Digit
 
--Build and train the CNN model
-
--Plot accuracy/loss curves
-
--Evaluate model performance
-
--Save the model (digit_model.h5)
-
--Test the model on your own image
-
-🧠 Predict Your Own Digit
 To test your own handwritten digit:
 
--Write a digit (0–9) on white paper with a dark pen.
+1.  Write a digit (0–9) on a white paper with a dark pen.
+2.  Take a clear photo and crop it tightly around the digit.
+3.  Save it as `my_digit.png` in the project folder (or inside `custom_digits/`).
+4.  Update the file path in the prediction cell (the last cell) in the notebook and run it.
 
--Take a clear photo and crop it tightly around the digit.
+The model will preprocess your image and predict the digit.
 
--Save it as my_digit.png in the project folder.
+---
 
--Run the prediction cell (Cell 8) in the notebook.
+## 📊 Model Summary
 
-The model will preprocess the image and predict the digit with confidence.
+* **Dataset:** MNIST (70,000 images)
+* **Accuracy:** Achieves ~98% accuracy on the test data.
 
-📊 Model Summary
+---
 
-Dataset: MNIST (70,000 images)
+## 💡 Tips
 
-Accuracy: ~98% on test data
+* If training is too slow on your computer, you can set `USE_SMALL_SUBSET = True` in the notebook for a faster demonstration. For the best results, set it to `False` to train on the full dataset.
+* The prediction code automatically handles both white-on-black and black-on-white digit images.
+* You can also train the model on your own dataset. The notebook explains the required folder structure.
 
-💡 Tips
--If training is slow, set USE_SMALL_SUBSET = True (faster demo).
+---
 
--For better accuracy, set it to False to train on the full dataset.
+## 👤 Author
 
--If your digit image is inverted (black background), the code auto-fixes it.
+**Tejash**
 
--You can also train using your own dataset (folder structure explained in the notebook).
+* [**GitHub Profile**](https://github.com/Tejash1002)
 
-👤 Author
-Tejash
-📎 GitHub Profile
-
-⭐ If you found this project helpful, don’t forget to star the repository!
-
-
-
-
-
-
-
-
-
-
-
-
-
+⭐ *If you found this project helpful, don’t forget to star the repository!*
