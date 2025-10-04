@@ -10,7 +10,9 @@ Built with **TensorFlow/Keras**, it learns from the **MNIST dataset** and can pr
 The goal of this project is to:
 
 - Train a CNN to recognize handwritten digits.
+- 
 - Test the model’s accuracy on unseen data.
+- 
 - Use your own digit images for prediction
 
 ---
