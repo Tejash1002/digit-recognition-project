@@ -66,30 +66,47 @@ jupyter notebook
 2️⃣ Open and Run the Notebook
 
 Open digit_recognition.ipynb and run all the cells one by one.
+
 The notebook will:
+
 -Load and preprocess MNIST data
+
 -Build and train the CNN model
+
 -Plot accuracy/loss curves
+
 -Evaluate model performance
+
 -Save the model (digit_model.h5)
+
 -Test the model on your own image
 
 🧠 Predict Your Own Digit
 To test your own handwritten digit:
+
 -Write a digit (0–9) on white paper with a dark pen.
+
 -Take a clear photo and crop it tightly around the digit.
+
 -Save it as my_digit.png in the project folder.
+
 -Run the prediction cell (Cell 8) in the notebook.
+
 The model will preprocess the image and predict the digit with confidence.
 
 📊 Model Summary
+
 Dataset: MNIST (70,000 images)
+
 Accuracy: ~98% on test data
 
 💡 Tips
 -If training is slow, set USE_SMALL_SUBSET = True (faster demo).
+
 -For better accuracy, set it to False to train on the full dataset.
+
 -If your digit image is inverted (black background), the code auto-fixes it.
+
 -You can also train using your own dataset (folder structure explained in the notebook).
 
 👤 Author
