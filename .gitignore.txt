@@ -1,0 +1,8 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large model files
+*.h5
+
+# Python cache
+__pycache__/
